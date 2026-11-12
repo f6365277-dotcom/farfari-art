@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FarFari Art | فرفری آرت</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f5efe3;color:#35271d;font-family:Tahoma,Arial;line-height:1.9}
+header{background:#30251e;color:#f5e5c5;text-align:center;padding:35px 15px}
+.logo{font-family:Georgia,serif;font-size:42px;letter-spacing:3px;color:#d8b875}
+header p{margin:0;font-size:16px}
+nav{background:#49382a;text-align:center;padding:12px;position:sticky;top:0}
+nav a{color:#f7e8c9;text-decoration:none;margin:0 13px}
+section{padding:55px 7%;text-align:center}
+h2{font-family:Georgia,serif;color:#856238;font-size:27px}
+.hero{padding:85px 15px;background:linear-gradient(120deg,#e4d3b6,#f8f1e5)}
+.hero h1{font-family:Georgia,serif;font-size:38px}
+.btn{display:inline-block;background:#856238;color:white;padding:10px 25px;text-decoration:none;border-radius:3px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.card{background:#fffaf1;padding:22px;border:1px solid #ddc9a8}
+.card h3{color:#76532f}
+.art{height:180px;background:#e8ddcb;display:grid;place-items:center;font-size:55px}
+form{max-width:550px;margin:auto;text-align:right}
+input,textarea,select{width:100%;padding:12px;margin:8px 0 17px;border:1px solid #c9b795;background:#fffaf1;font-family:Tahoma}
+button{background:#49382a;color:white;padding:13px 30px;border:0;cursor:pointer;font-family:Tahoma}
+footer{background:#30251e;color:#eee0c6;text-align:center;padding:25px}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">FarFari Art</div>
+<p>گالری هنری فرفری آرت</p>
+</header>
+<nav>
+<a href="#home">خانه</a>
+<a href="#styles">سبک‌ها</a>
+<a href="#gallery">نمونه‌کارها</a>
+<a href="#order">ثبت سفارش</a>
+</nav>
+<div class="hero" id="home">
+<h1>هنر، از نگاه شما</h1>
+<p>هر تصویری می‌تواند به یک اثر هنری ماندگار تبدیل شود.</p>
+<a class="btn" href="#order">سفارش نقاشی اختصاصی</a>
+</div>
+<section id="styles">
+<h2>سبک‌های هنری ما</h2>
+<div class="cards">
+<div class="card"><div class="art">✏️</div><h3>سیاه‌قلم</h3><p>طراحی ظریف و واقع‌گرایانه با سایه‌روشن‌های هنرمندانه.</p></div>
+<div class="card"><div class="art">🎨</div><h3>آنالیز رنگی</h3><p>ترکیب رنگ و خلق آثار هنری با جلوه‌ای چشم‌نواز.</p></div>
+<div class="card"><div class="art">⚫</div><h3>نقطه‌کوبی</h3><p>خلق طرح با نقطه‌های مشکی، از نزدیک و دور در کنار هم.</p></div>
+</div>
+</section>
+<section id="gallery">
+<h2>گالری نمونه‌کارها</h2>
+<p>نمونه آثار هنری فرفری آرت</p>
+<div class="cards">
+<div class="card"><div class="art">🖼️</div><p>نمونه سیاه‌قلم</p></div>
+<div class="card"><div class="art">🖼️</div><p>نمونه آنالیز رنگی</p></div>
+<div class="card"><div class="art">🖼️</div><p>نمونه نقطه‌کوبی</p></div>
+</div>
+<p>به‌زودی تصاویر اصلی آثار در این بخش قرار می‌گیرند.</p>
+</section>
+<section id="order">
+<h2>سفارش نقاشی اختصاصی</h2>
+<p>عکس دلخواهت رو برای تبدیل شدن به یک اثر هنری انتخاب کن.</p>
+<form action="https://formsubmit.co/YOUR_EMAIL" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="_subject" value="سفارش جدید فرفری آرت">
+<label>نام و نام خانوادگی</label>
+<input name="name" required>
+<label>شماره تماس</label>
+<input name="phone" type="tel" required>
+<label>سبک موردنظر</label>
+<select name="style">
+<option>سیاه‌قلم</option>
+<option>آنالیز رنگی</option>
+<option>نقطه‌کوبی مشکی</option>
+</select>
+<label>توضیحات سفارش</label>
+<textarea name="details" rows="4"></textarea>
+<label>ارسال عکس دلخواه</label>
+<input type="file" name="photo" accept="image/*" required>
+<button type="submit">ارسال درخواست سفارش</button>
+</form>
+</section>
+<footer>
+<div class="logo">FarFari Art</div>
+<p>هنر، امضای نگاه شماست.</p>
+<p>© تمام حقوق متعلق به گالری فرفری آرت است.</p>
+</footer>
+</body>
+</html>
